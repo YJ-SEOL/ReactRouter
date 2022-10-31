@@ -1,7 +1,10 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { ReactComponent as Test } from "./assets/icons/test.svg";
+import { ReactComponent as Info } from "./assets/icons/ruleInfo.svg";
+import { ReactComponent as Notice } from "./assets/icons/newRule.svg";
+import { AiOutlineForm } from "react-icons/ai";
+import { MdPostAdd } from "react-icons/md";
 
 const MainIconStyle = {
     width: "700px",
@@ -40,13 +43,21 @@ const MainMenu = () => {
             </nav> */}
             <div style={MainIconStyle}>
                 <Button variant="outline-primary">
-                    <Test />
+                    <Info />
                     규정정보
                 </Button>
-
-                <Button>제•개정</Button>
-                <Button>공지사항</Button>
-                <Button>서식</Button>
+                <Button>
+                    <MdPostAdd />
+                    제•개정
+                </Button>
+                <Button variant="outline-primary">
+                    <Notice width={100} height="102.5px" />
+                    공지사항
+                </Button>
+                <Button>
+                    <AiOutlineForm class name="form" width="102.5px" height="102.5px" />
+                    서식
+                </Button>
             </div>
         </div>
     );

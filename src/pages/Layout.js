@@ -75,12 +75,12 @@ const Layout = () => {
             </header>
 
             <main
-                style={{
-                    height: "320px",
-                    background: "lightgray",
-                    padding: 16,
-                    fontSize: 24,
-                }}
+            // style={{
+            //     height: "50vh",
+            //     background: "lightgray",
+            //     padding: 16,
+            //     fontSize: 24,
+            // }}
             >
                 <Outlet />
             </main>
